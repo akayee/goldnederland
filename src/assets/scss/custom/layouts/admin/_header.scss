@@ -1,0 +1,95 @@
+.admin-header-wrap{
+   background-color: whitesmoke !important;
+   box-shadow: -2px -42px 34px 21px #283593 !important;
+   .humburger{
+      width: 40px;
+      height:40px;
+      border-radius:100%;
+      background-color: $primary !important;
+      box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+       0px 6px 10px 0px rgba(0, 0, 0, 0.14), 
+       0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+   }
+   .iron-language-provider{
+      margin-right:20px;
+   }
+   .base-text span ,.base-text i{
+      color: $dark;
+  
+  }
+}
+//========= Admin sidebar ======
+
+.admin-sidebar-wrap{
+   //background-image: url("../../assets/images/bg-sidebar.jpg") !important;
+   background-color: $primary;
+   // background-position: center center;
+   // background-size: cover;
+   // background-repeat: no-repeat;
+   width: 16.25rem;
+   overflow: hidden;
+   transition: all 200ms ease 0s;
+   height: 100%;
+   .admin-menu{
+      li{
+         padding: 0;
+         height:auto;
+         position: relative;
+         display: block;
+         > a,> span{
+            line-height:48px;
+            padding: 0 15px !important;
+            color:$base;
+            text-transform: capitalize !important;
+            a{
+               &:hover{
+                  background-color: rgba(18, 18, 20, 0.7) !important;
+               } 
+            }   
+         }
+         > span{
+            position: relative;
+            &:after{
+                position: absolute;
+                content: "\F2FB";
+                font-family: 'Material-Design-Iconic-Font';
+                right: 1.5rem;
+                top: 0;
+                font-size:1.25rem;
+                bottom: 0;
+                color:$base;
+                display: flex;
+                display: -ms-flexbox;
+                align-items: center;
+                -ms-flex-align: center;
+                transform: rotate(0);
+                transition: all 0.2s ease-in-out;
+            }
+         }
+         .link-active{
+            background-color: rgba(14,27,121,.7) !important;
+         }
+         &:last-child .link-active{
+            background-color: rgba(14,27,121,0) !important;
+         }
+      }
+      .item-active{
+         > span{
+            &:after{
+               transform: rotate(90deg);
+            }
+         }
+      }
+      .sub-menu{
+         padding:0;
+         display: block;
+         transition: transform 0.3s ease-out 0s;
+         li{
+            a{
+               padding-left: 60px !important;
+               display: block;
+            }   
+         }
+      }
+   }
+}

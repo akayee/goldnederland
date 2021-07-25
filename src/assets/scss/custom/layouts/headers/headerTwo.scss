@@ -1,0 +1,45 @@
+
+//header one styling
+.iron-header-v2{
+    box-shadow:$box-shadow !important;
+    background-color:$primary;
+    .iron-app-logo{
+        padding:8px 0;
+    }
+    .iron-header-bottom{
+      background-color: $base;
+    }
+    .iron-header-menu{
+      li{
+        padding: 0;
+        a{
+            color: $dark;
+        }
+        .sub-menu{
+            li {
+                a {
+                    color: $dark;
+                }
+            }
+        }
+      }
+    }
+    .badge-active span {
+        width: 1.125rem;
+        height: 1.125rem;
+        min-width: 1.125rem;
+        min-height: 1.125rem;
+        top: -7px;
+        right: -7px;
+    }
+    .icon-btn {
+        width: 35px !important;
+        height: 35px !important;
+        i{
+            font-size:1.25rem;
+        }
+    }
+    .iron-sidebar-nav-wrap,.iron-search-box{
+        display: none;
+    }
+}
